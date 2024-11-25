@@ -98,7 +98,7 @@ const facts = [
 
         new Fact("Fact 3", "I love cinema and one of my favorite movies is 'Dead poets society'. I also love reading and my favorite book is 'To kill a mockingbird'. And finally my favorite anime is 'Code Geass'"),
 
-        new Fact("Fact 4", "You can know more on my <a href='Maïli_Truong_resume.pdf' target='blank'>curriculum vitae</a>"),
+        new Fact("Fact 4", "You can know more on my <a href='mailitruong.github.io/Portfolio/Maïli_Truong_resume.pdf' target='blank'>curriculum vitae</a>"),
 ];
 
 
@@ -112,7 +112,7 @@ const projects = [
         "Dynamic weather visualization, Real-time data fetching, Interactive canvas, Dynamic sun position visualization"),
         
         new Project("StackRush",
-                "projects/StackRush/Stackrush.png",
+                "projects/StackRush/StackRush.png",
                 "StackRush is a vintage pixel game made with pygame where you have to stack blocks according to the tempo of a metronome that accelerates as precisely as possible to achieve high scores and be on the podium ! You can either play it with a small controller or on you keyboard !",
                 "Python, Arduino",
                 "projects/StackRush/StackRush.gif",
