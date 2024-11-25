@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Projects</title>
-        <link href="pstyle.css" rel="stylesheet">
-        <link href="tstyle.css" rel="stylesheet">
+        <link href="./static/pstyle.css" rel="stylesheet">
+        <link href="./static/tstyle.css" rel="stylesheet">
     </head>
     <body>
         <div id="toolbar-container">
@@ -25,8 +25,8 @@
             <h1>My Projects</h1>
             <div id="projects-grid" class="grid-container"></div>
         </div>
-        <script src="toolbar.js"></script>
-        <script src="generate_project.js"></script> 
+        <script src="./static/toolbar.js"></script>
+        <script src="./static/generate_project.js"></script> 
         <script>
             function add_project_preview() 
             {
@@ -35,7 +35,6 @@
                     grid_container.innerHTML += project.create_preview();
                 });
             }
-
             document.addEventListener("DOMContentLoaded", add_project_preview);
         </script>
     </body>
