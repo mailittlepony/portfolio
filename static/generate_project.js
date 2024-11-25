@@ -98,7 +98,7 @@ const facts = [
 
         new Fact("Fact 3", "I love cinema and one of my favorite movies is 'Dead poets society'. I also love reading and my favorite book is 'To kill a mockingbird'. And finally my favorite anime is 'Code Geass'"),
 
-        new Fact("Fact 4", "You can know more on my <a href='https://mailitruong.github.io/Maïli_Truong_resume.pdf' target='blank'>curriculum vitae</a>"),
+        new Fact("Fact 4", "You can know more on my <a href='Maili_Truong_resume.pdf' target='blank'>curriculum vitae</a>"),
 ];
 
 
