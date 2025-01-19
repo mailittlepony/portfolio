@@ -202,6 +202,8 @@ main {
 .header-right {
     display: flex;
     gap: 16px;
+    align-items: center; 
+    justify-content: flex-start;
 }
 
 
@@ -209,13 +211,13 @@ main {
     width: 20px;
     height: 20px;
     filter: brightness(0) saturate(100%) invert(20%) sepia(0%) saturate(100%) hue-rotate(0deg) brightness(80%) contrast(90%);
+    border-radius: 0px;
 }
 
 #burger {
     width: 30px;
     height: 30px;
 }
-
 
 .header-item::after {
     content: '';
