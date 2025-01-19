@@ -1,8 +1,16 @@
 const isGitHubPages = location.hostname === 'mailittlepony.github.io';
 const basePath = isGitHubPages ? '/Portfolio/' : '/';
+
+const baseTag = document.querySelector('base');
+if (baseTag) {
+    baseTag.setAttribute('href', basePath);
+}
+
 document.querySelectorAll('script[src], link[href], img[src]').forEach((el) => {
-  const attr = el.tagName === 'LINK' || el.tagName === 'SCRIPT' ? 'src' : 'href';
-  if (el.getAttribute(attr).startsWith('/')) {
-    el.setAttribute(attr, basePath + el.getAttribute(attr).slice(1));
-  }
+    const attr = el.tagName === 'LINK' ? 'href' : 'src';
+    const currentPath = el.getAttribute(attr);
+    if (currentPath && !currentPath.startsWith('http') && !currentPath.startsWith(basePath)) {
+        el.setAttribute(attr, basePath + currentPath);
+    }
 });
+
