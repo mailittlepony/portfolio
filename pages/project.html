@@ -4,13 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Portfolio</title>
-
+        <base href="/" />
         <script src="js/utils.js"></script>
-        <script src="js/script.js"></script>
-
-        <link rel="stylesheet" href="style.css">
-
+        <script src="js/project.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/marked@15.0.6/lib/marked.umd.min.js"></script>
+
+        <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/default.min.css">
         <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/languages/c.min.js"></script>
@@ -19,7 +18,7 @@
         <div id="page">
             <header class="github-header">
                 <div class="header-left">
-                    <a href="index.html" class="header-item active" id="readme-link">
+                    <a href="index.html" class="header-item" id="readme-link">
                         <img src="icons/book.png" class="icon" alt="README icon"> README
                     </a>
                     <a href="pages/contact.html" class="header-item" id="contact-link">
@@ -34,14 +33,11 @@
 
             <main>
                 <div id="content"></div>
+                <script>loadPage();</script>
             </main>
             <footer>
-                <p>&copy; 2025 Maïli Truong</p>
+                <p>© 2025 Maïli Truong</p>
             </footer>
-
-            <script>loadPage();</script>
         </div>
     </body>
 </html>
-
-
