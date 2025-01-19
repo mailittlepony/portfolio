@@ -20,7 +20,7 @@ _A C# console application for managing your society._
 - **Technologies**: C#
 - **License**: Apache License 2.0  
 - **Last Updated**: last week  
-- **Image**: ./images/TransConnect/TransConnect.png
+- **Image**: ./images/Transconnect/TransConnect.png
 
 ---
 **[SatelliteAntenna](https://github.com/mailittlepony)**  
