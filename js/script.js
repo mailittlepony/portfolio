@@ -10,8 +10,20 @@ async function loadPage () {
             for (const img of p.querySelectorAll("img")) {
                 const a = document.createElement('a');
                 a.href = `pages/project.html?name=${img.alt}`;
+
+                const titleDiv = document.createElement("div");
+                titleDiv.classList.add("title");
+
+                // temporary
+                a.style.position = "relative";
+
+                const title = document.createElement("h2");
+                title.innerHTML = img.alt;
+                titleDiv.appendChild(title);
+
                 p.appendChild(a);
                 a.appendChild(img);
+                a.appendChild(titleDiv);
             }
             break;
         }

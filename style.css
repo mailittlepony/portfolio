@@ -19,7 +19,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     line-height: 1.8;
-    font-size: 16px;
     color: #34495e;
 }
 
@@ -55,7 +54,7 @@ code {
 
 
 img {
-    aspect-ratio: 5 / 3;
+    aspect-ratio: 5 / 4;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -93,7 +92,6 @@ img:hover:not(#modal img) {
 a {
     text-decoration: none;
     color: #34495e;
-    font-size: 1rem;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -282,12 +280,36 @@ img[src*=".gif"] {
 }
 
 .selected-project img {
+    transition: transform 0.3s ease, filter 0.3s ease;
     width: 500px;
     height: auto;
 }
 
-.selected-project a {
-    width: 500px;
+.selected-project .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.selected-project .title h2{
+    color: white;
+}
+
+.selected-project img:hover {
+    filter: brightness(0.8);
+}
+
+.selected-project img:hover + .title {
+    opacity: 1;
 }
 
 @media (max-width: 768px) {
@@ -296,10 +318,6 @@ img[src*=".gif"] {
         max-width: 100%; 
         border-radius: 0; 
         box-shadow: none; 
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 1.2rem; 
     }
 
     p {
@@ -340,40 +358,77 @@ img[src*=".gif"] {
     }
 
     .github-header {
-        padding: 10px; 
+        padding: 10px 15px; 
+    }
+
+    .header-left,
+    .header-right {
+        gap: 8px; 
+    }
+    .header-item {
         font-size: 14px; 
     }
 
-    .header-left, .header-right {
-        flex-direction: column; 
-        gap: 10px;
+    .icon {
+        width: 18px; 
+        height: 18px;
     }
 
-    .header-item {
-        font-size: 14px;
+    #burger {
+        width: 24px;
+        height: 24px;
     }
 
     img {
         border-radius: 4px; 
     }
+
+    img[src*=".gif"] {
+        aspect-ratio: 5 / 4;
+        height: 250px; 
+        width: auto; 
+        object-fit: cover; 
+        border-radius: 5px;     
+        display: block;
+        margin: 0 auto;
+    }
 }
+
 
 @media (max-width: 480px) {
     #page {
         padding: 10px; 
     }
 
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 1rem; 
-    }
-
     p {
-        font-size: 12px;
         line-height: 1.5;
     }
 
     .github-header {
+        padding: 8px 10px; 
+    }
+
+    .header-left,
+    .header-right {
+        gap: 6px; 
+    }
+
+    .header-item {
         font-size: 12px; 
     }
-}
 
+    .icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    img[src*=".gif"] {
+        aspect-ratio: 5 / 4;
+        height: 250px; 
+        width: auto; 
+        object-fit: cover; 
+        border-radius: 5px;     
+        display: block;
+        margin: 0 auto;
+    }
+}
