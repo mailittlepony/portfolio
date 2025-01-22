@@ -1,19 +1,24 @@
 
 # Maïli Truong
 ---
-Welcome to my portfolio! I am Maïli Truong and I am currently in forth year of engineering school in Paris. More precisely, I am in a Creative Technologies' Master at ESILV (École Supérieure Léonard de Vinci). In this Master I am in the Human Learning Research group of the school, where my goal will be to innovate around human machine interaction and explore its impact on human's psychology and memory. In this portfolio you will follow my learning process to achieve this goal driven by a huge curiosity for technologies, for the world in general and the love of learning.
+**Welcome to my portfolio!** 
+I am **Maïli Truong** and I innovate around **human machine interaction** and explore its impact on human's **psychology** and **memory**. 
+
+I’m passionate about **learning** and deeply **curious** about how technologies shape the world around us. 
+
+If you are interested in my work, please **reach out**: maili.truong@edu.devinci.fr
 
 
-
-## Projects
+## Four featured projects
 ---
-**[BeTheNarrator](https://github.com/mailittlepony)**  
-_RPG game using llamacpp._  
-- **Technologies**: JavaScript, AI, llamacpp  
-- **License**: Apache License 2.0  
-- **Last Updated**: last week  
-- **Image**: ./images/BeTheNarrator/BeTheNarrator.png
+![FlowerGame](./images/SmallGameboy/FlowerGame.png)
+![ShadowBallet](./images/ShadowBallet/shadow.jpeg)
+![MathExploration](./images/MathExploration/MathExploration.png)
+![RayMarching](./images/Droppy/droppy2.png)
 
+If you want to see more projects continue reading !
+
+## Other projects
 ---
 **[TransConnect](https://github.com/mailittlepony)**  
 _A C# console application for managing your society._  
@@ -21,22 +26,6 @@ _A C# console application for managing your society._
 - **License**: Apache License 2.0  
 - **Last Updated**: last week  
 - **Image**: ./images/Transconnect/TransConnect.png
-
----
-**[SatelliteAntenna](https://github.com/mailittlepony)**  
-_Fabrication of a small gameboy and coding a multiplayer game for ESP using TCP protocol._  
-- **Technologies**: C++, ECS, OpenGL  
-- **License**: Apache License 2.0  
-- **Last Updated**: last week  
-- **Image**: ./images/SatelliteAntenna/SatelliteAntenna.jpeg
-
----
-**[SmallGameboy](https://github.com/mailittlepony)**  
-_Fabrication of a small gameboy and coding a multiplayer game for ESP using TCP protocol._  
-- **Technologies**: C++, C, PCB, TCP, electronics  
-- **License**: Apache License 2.0  
-- **Last Updated**: last week  
-- **Image**: ./images/SmallGameboy/FlowerGame.png
 
 ---
 **[StackRush](https://github.com/mailittlepony)**  
@@ -47,6 +36,14 @@ _2D remake of the stack game._
 - **Image**: ./images/StackRush/StackRush2.png
 
 ---
+**[BeTheNarrator](https://github.com/mailittlepony)**  
+_RPG game using llamacpp._  
+- **Technologies**: JavaScript, AI, llamacpp  
+- **License**: Apache License 2.0  
+- **Last Updated**: last week  
+- **Image**: ./images/BeTheNarrator/BeTheNarrator.png
+
+---
 **[SimpleECS](https://github.com/mailittlepony)**  
 _Simple ECS C++ library._  
 - **Technologies**: C++, ECS  
@@ -55,29 +52,12 @@ _Simple ECS C++ library._
 - **Image**: ./images/SimpleECS/SimpleECS.png
 
 ---
-**[ShadowBallet](https://github.com/mailittlepony)**  
-_Shadow ballet made from scratch wether it is building the setting, doing the choreography, the dancing and the acting._  
-- **Technologies**: Video editing, Dancing, Piano, Acting, Show making
-- **License**: Apache License 2.0  
-- **Last Updated**: last week  
-- **Image**: ./images/ShadowBallet/shadow.jpeg
-
----
-**[MathExploration](https://github.com/mailittlepony/MathExploration/blob/main/README.md)**  
-_Math exploring game for educational purposes._  
+**[SatelliteAntenna](https://github.com/mailittlepony)**  
+_Fabrication of a small gameboy and coding a multiplayer game for ESP using TCP protocol._  
 - **Technologies**: C++, ECS, OpenGL  
 - **License**: Apache License 2.0  
 - **Last Updated**: last week  
-- **Image**: ./images/MathExploration/MathExploration.png
-
----
-
-**[RayMarching](https://github.com/mailittlepony)**  
-_Interactive weather visualization using ray marching._  
-- **Technologies**: GLSL, RayMarching 
-- **License**: Apache License 2.0  
-- **Last Updated**: last week 
-- **Image**: ./images/Droppy/droppy2.png
+- **Image**: ./images/SatelliteAntenna/SatelliteAntenna.jpeg
 
 ---
 

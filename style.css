@@ -60,7 +60,35 @@ img {
     height: auto;
     object-fit: cover;
     border-radius: 6px;
+    transition: transform 0.3s ease;
 }
+
+img:hover:not(#modal img) {
+    transform: scale(1.02);
+}
+
+/* #modal { */
+/*     display: flex; */
+/*     flex-direction: column; */
+/*     gap: 10px; */
+/*     align-items: center; */
+/*     justify-content: center; */
+/*     position: fixed; */
+/*     left: 0; */
+/*     top: 0; */
+/*     bottom: 0; */
+/*     right: 0; */
+/*     background-color: rgba(0, 0, 0, 0.3); */
+/* } */
+
+/* #modal img { */
+/*     width: 50%; */
+/* } */
+
+/* #modal span { */
+/*     width: 50%; */
+/*     text-align: end; */
+/* } */
 
 a {
     text-decoration: none;
@@ -242,5 +270,110 @@ img[src*=".gif"] {
     border-radius: 5px;     
     display: block;
     margin: 0 auto;
+}
+
+.selected-project {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow: scroll;
+    width: 100%;
+    padding: 5px;
+}
+
+.selected-project img {
+    width: 500px;
+    height: auto;
+}
+
+.selected-project a {
+    width: 500px;
+}
+
+@media (max-width: 768px) {
+    #page {
+        padding: 20px;
+        max-width: 100%; 
+        border-radius: 0; 
+        box-shadow: none; 
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1.2rem; 
+    }
+
+    p {
+        font-size: 14px; 
+        line-height: 1.6;
+    }
+
+    ul, ol {
+        padding-left: 20px; 
+        font-size: 14px;
+    }
+
+    blockquote {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .project-card {
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 10px;
+    }
+
+    .project-image {
+        width: 100%; 
+        height: auto;
+    }
+
+    .selected-project {
+        flex-direction: column; 
+        gap: 10px;
+        overflow: auto;
+    }
+
+    .selected-project img,
+    .selected-project a {
+        width: 100%; 
+    }
+
+    .github-header {
+        padding: 10px; 
+        font-size: 14px; 
+    }
+
+    .header-left, .header-right {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .header-item {
+        font-size: 14px;
+    }
+
+    img {
+        border-radius: 4px; 
+    }
+}
+
+@media (max-width: 480px) {
+    #page {
+        padding: 10px; 
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1rem; 
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .github-header {
+        font-size: 12px; 
+    }
 }
 

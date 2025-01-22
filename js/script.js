@@ -1,19 +1,33 @@
+
 async function loadPage () {
     const markdown = await loadMarkdown("./markdown/sample.md");
     generateProjectCards(markdown);
+    const ps = document.getElementById("content").querySelectorAll("p");
+    
+    for (const p of ps) {
+        if (p.querySelectorAll("img").length >= 2) {
+            p.classList.add("selected-project");
+            for (const img of p.querySelectorAll("img")) {
+                const a = document.createElement('a');
+                a.href = `pages/project.html?name=${img.alt}`;
+                p.appendChild(a);
+                a.appendChild(img);
+            }
+            break;
+        }
+    }
 }
 
 function generateProjectCards(markdownText) {
-    const projectSectionRegex = /## Projects([\s\S]*?)(##|$)/;
+    const projectSectionRegex = /## Other projects([\s\S]*?)(##|$)/;
     const projectRegex = /\*\*\[(.+?)\]\((.+?)\)\*\*\s+_([^_]+)_\s+-\s+\*\*Technologies\*\*: ([^\n]+)\s+-\s+\*\*License\*\*: ([^\n]+)\s+-\s+\*\*Last Updated\*\*: ([^\n]+)\s*(?:-\s+\*\*Image\*\*: ([^\n]+))?/g;
-
+    const projects = [];
     const projectsSection = markdownText.match(projectSectionRegex);
     if (!projectsSection) {
         console.error("Projects section not found");
         return;
     }
 
-    const projects = [];
     let match;
     projectRegex.lastIndex = 0; 
     while ((match = projectRegex.exec(projectsSection[1])) !== null) {
@@ -36,7 +50,7 @@ function generateProjectCards(markdownText) {
 
     const contentDiv = document.getElementById("content");
     const projectSectionHeader = Array.from(contentDiv.querySelectorAll("h2")).find(
-        (header) => header.textContent.trim().toLowerCase() === "projects"
+        (header) => header.textContent.trim().toLowerCase() === "other projects"
     );
 
     if (!projectSectionHeader) {
@@ -87,4 +101,5 @@ function generateProjectCards(markdownText) {
         contentDiv.insertBefore(projectCard, projectSectionHeader.nextElementSibling);
     });
 }
+
 
