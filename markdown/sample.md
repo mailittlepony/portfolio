@@ -11,6 +11,7 @@ If you are interested in my work, please **reach out**: maili.truong@edu.devinci
 
 ## Four featured projects
 ---
+![mirrormorphose](./images/mirrormorphose/mirror.png)
 ![FlowerGame](./images/SmallGameboy/FlowerGame.png)
 ![ShadowBallet](./images/ShadowBallet/shadow.jpeg)
 ![MathExploration](./images/MathExploration/MathExploration.png)
@@ -53,9 +54,9 @@ _Simple ECS C++ library._
 
 ---
 **[SatelliteAntenna](https://github.com/mailittlepony)**  
-_Fabrication of a small gameboy and coding a multiplayer game for ESP using TCP protocol._  
-- **Technologies**: C++, ECS, OpenGL  
-- **License**: Apache License 2.0  
+_Really fun antenna made during bootcamp to retreive data from a dead satellite._  
+- **Technologies**: teamwork, fun  
+- **License**: IFT License 2.0  
 - **Last Updated**: last week  
 - **Image**: ./images/SatelliteAntenna/SatelliteAntenna.jpeg
 
