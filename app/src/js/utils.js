@@ -2,7 +2,6 @@ const marked = window.marked;
 const hljs   = window.hljs;
 
 function resolveBase() {
-  // Prefer Vite's configured base when it's non-root.
   const viteBase =
     (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.BASE_URL)
       ? import.meta.env.BASE_URL
@@ -12,22 +11,18 @@ function resolveBase() {
     return viteBase.endsWith('/') ? viteBase : viteBase + '/';
   }
 
-  // If we're on GitHub Pages (hostname ends with github.io), derive /<repo>/
   const host = window.location.hostname.toLowerCase();
   if (host.endsWith('github.io')) {
     const segs = window.location.pathname.split('/').filter(Boolean);
-    // project sites are /<repo>/..., user sites are '/'
     return segs.length > 0 ? `/${segs[0]}/` : '/';
   }
-
-  // Local dev (localhost/127.0.0.1) or any other host → root
   return '/';
 }
 
 function asset(path) {
   if (/^https?:\/\//i.test(path)) return path;
 
-  const base = resolveBase(); // e.g. '/' locally, '/portfolio/' on GH Pages
+  const base = resolveBase(); 
   const absBase = window.location.origin + (base.endsWith('/') ? base : base + '/');
 
   const rel = path.startsWith('/') ? path.slice(1) : path;
