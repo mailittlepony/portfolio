@@ -9,11 +9,12 @@ I’m passionate about **learning** and deeply **curious** about how technologie
 If you are interested in my work, you can <a href="/portfolio/cv.pdf" target="_blank" rel="noopener"> View My CV</a>
 or **reach out**: maili.truong@edu.devinci.fr !
 
-## Four featured projects
+## Six featured projects
 ---
 ![mirrormorphose](./images/mirrormorphose/mirror.png)
 ![flowergame](./images/SmallGameboy/FlowerGame.png)
 ![ShadowBallet](./images/ShadowBallet/shadow.jpeg)
+![gaze_tracker](./images/gaze_tracker/gaze.png)
 ![mathexploration](./images/MathExploration/MathExploration.png)
 ![raymarching](./images/Droppy/droppy2.png)
 
@@ -37,12 +38,12 @@ _Simple ECS C++ library._
 - **Image**: ./images/SimpleECS/SimpleECS.png
 
 ---
-**[be_the_narrator](https://github.com/mailittlepony)**  
-_RPG game using llamacpp._  
-- **Technologies**: JavaScript, AI, llamacpp  
+**[mnist](https://github.com/mailittlepony)**  
+_MNIST handwritten digit classification using Tinygrad._  
+- **Technologies**: Python, AI, webgpu, tinygrad  
 - **License**: Apache License 2.0  
 - **Last Updated**: last week  
-- **Image**: ./images/BeTheNarrator/BeTheNarrator.png
+- **Image**: ./images/mnist/mnist.png
 
 ---
 **[stackrush](https://github.com/mailittlepony)**  
