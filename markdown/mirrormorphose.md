@@ -6,7 +6,7 @@
 **MirrorMorphose** is an interactive mirror that uses **gaze** as an emotional portal between **space** and **time**. When the viewer **maintains eye contact** with their reflection, the image **gradually morphs** into a childhood version of themselves, a family member, or another person, who stares back and listens carefully, **inviting a dialogue across identity and time**. Through this slow visual transformation, the project explores **how sustained gaze fosters empathy, self-recognition, and the blurring of boundaries between self and other**.
   Drawing from practices of **meditation**, **hypnosis**, and therapeutic mirroring, MirrorMorphose proposes the gaze as an active medium of **connection**, both technological and intimate. The project challenges the viewer to confront their own reflection as a lived encounter, where **memory**, **emotion**, and **technology** intertwine. In doing so, **seeing** becomes a form of **becoming**, engaging viewers in having **reflections or conversations in a meditative act of meeting oneself through the eyes of another**. 
 
-<video src="/portfolio/images/mirrormorphose/demo.mp4" autoplay loop muted playsinline preload="metadata"></video>
+![demo](./images/mirrormorphose/demo.mp4)
 
 
 ## Technical Aspect
