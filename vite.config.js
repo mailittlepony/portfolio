@@ -6,21 +6,22 @@
  */
 
 import { defineConfig } from 'vite'
-import { resolve } from 'path'
 
 export default defineConfig({
   base: '/portfolio/',
+  appType: 'spa',
   build: {
     outDir: 'dist',
     emptyOutDir: true,
     rollupOptions: {
-      input: {
-        main:    resolve(__dirname, 'index.html'),
-        contact: resolve(__dirname, 'pages/contact.html'),
-        project: resolve(__dirname, 'pages/project.html'),
+      output: {
+        manualChunks: {
+          vendor: ['markdown-it', 'dompurify'],
+          highlight: ['highlight.js', 'markdown-it-highlightjs'],
+        },
       },
     },
+    chunkSizeWarningLimit: 1500
   },
 })
-
 
