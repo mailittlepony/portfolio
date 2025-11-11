@@ -5,6 +5,7 @@
 
 - Email: maili.truong@edu.devinci.fr
 - [GitHub](https://github.com/mailittlepony)
-- [LinkedIn](www.linkedin.com/in/maïli-truong-6a9ab02b5)
+- [LinkedIn](https://www.linkedin.com/in/maïli-truong-6a9ab02b5)
+
 
 
