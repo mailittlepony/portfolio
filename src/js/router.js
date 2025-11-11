@@ -22,6 +22,12 @@ function setActiveHeader(view, hasProject) {
     if (view === "contact") contactLink?.classList.add("active");
 }
 
+function scrollToTop() {
+    const scroller = document.getElementById("page");
+    if (scroller) scroller.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+}
+
 export async function handleNavigation() {
     const params = new URLSearchParams(window.location.search);
     const projectName = params.get("name");
@@ -30,12 +36,14 @@ export async function handleNavigation() {
     if (projectName) {
         setActiveHeader("", true);
         await loadProjectPage();
+        scrollToTop();
         return;
     }
 
     if (view && BUILTIN_MD_VIEWS.has(view)) {
         setActiveHeader(view, false);
         await loadMarkdown(`markdown/${view}.md`);
+        scrollToTop();
         return;
     }
 
@@ -43,6 +51,7 @@ export async function handleNavigation() {
         try {
             setActiveHeader(view, false);
             await loadMarkdown(`markdown/${view}.md`);
+            scrollToTop();
             return;
         } catch (e) {
             console.warn(`[router] markdown/${view}.md not found → home`, e);
@@ -51,6 +60,7 @@ export async function handleNavigation() {
 
     setActiveHeader("home", false);
     await loadHomePage();
+    scrollToTop();
 }
 
 export function initRouter() {
