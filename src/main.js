@@ -4,19 +4,15 @@
  *
  * Distributed under terms of the MIT license.
  */
+import './js/router.js';
+import { initRouter, handleNavigation } from './js/router.js';
+import 'highlight.js/styles/github.css';
 import './style.css';
 import './js/utils.js';
 import './js/script.js';
 import './js/project.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    const params = new URLSearchParams(window.location.search);
-    const projectName = params.get('name');
-
-    if (projectName) {
-        window.loadProjectPage?.();
-    } else {
-        window.loadHomePage?.();
-    }
+    initRouter();
+    handleNavigation();
 });
-

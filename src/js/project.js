@@ -1,3 +1,10 @@
+/*
+ * project.js
+ * Copyright (C) 2025 mailitg <mailitg@maili-mba.local>
+ *
+ * Distributed under terms of the MIT license.
+ */
+
 import { loadMarkdown } from './utils.js';
 
 export async function loadProjectPage() {
@@ -48,7 +55,7 @@ export async function loadProjectPage() {
 function rewriteRelativeUrls(containerSelector, base) {
     const container = document.querySelector(containerSelector);
     if (!container) return;
-    container.querySelectorAll('img, a').forEach((el) => {
+    container.querySelectorAll('img, a, video, source').forEach((el) => {
         for (const attr of ['src', 'href']) {
             const val = el.getAttribute(attr);
             if (!val || /^https?:\/\//i.test(val)) continue;

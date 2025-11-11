@@ -1,7 +1,14 @@
+/*
+ * script.js
+ * Copyright (C) 2025 mailitg <mailitg@maili-mba.local>
+ *
+ * Distributed under terms of the MIT license.
+ */
+
 import { loadMarkdown } from './utils.js';
 
-async function loadHomePage () {
-    const markdown = await loadMarkdown('markdown/sample.md');
+export async function loadHomePage () {
+    const markdown = await loadMarkdown('markdown/home.md');
     generateProjectCards(markdown);
 
     const ps = document.getElementById('content').querySelectorAll('p');
@@ -12,7 +19,7 @@ async function loadHomePage () {
             for (const img of imgs) {
                 const repoName = img.alt.trim();
                 const a = document.createElement('a');
-                a.href = `pages/project.html?name=${encodeURIComponent(repoName)}`;
+                a.href = `?name=${encodeURIComponent(repoName)}`;
 
                 const titleDiv = document.createElement('div');
                 titleDiv.classList.add('title');
@@ -30,7 +37,6 @@ async function loadHomePage () {
         }
     }
 }
-window.loadHomePage = loadHomePage;
 
 function generateProjectCards(markdownText) {
     const projectSectionRegex = /## Other projects([\s\S]*?)(##|$)/;
@@ -99,7 +105,7 @@ function generateProjectCards(markdownText) {
         card.innerHTML = `
 <div class="project-text">
     <div class="project-header">
-        <a href="pages/project.html?name=${encodeURIComponent(repoName)}" class="project-title">${project.title}</a>
+        <a href="?name=${encodeURIComponent(repoName)}" class="project-title">${project.title}</a>
     </div>
     <p class="project-description">${project.description}</p>
     <ul class="project-tags">

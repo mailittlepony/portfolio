@@ -6,8 +6,7 @@ I am **Maïli Truong** and I innovate around **human machine interaction** and e
 
 I’m passionate about **learning** and deeply **curious** about how technologies shape the world around us. 
 
-If you are interested in my work, you can <a href="/portfolio/cv.pdf" target="_blank" rel="noopener"> View My CV</a>
-or **reach out**: maili.truong@edu.devinci.fr !
+If you are interested in my work, you can [View My CV](/portfolio/cv.pdf) or **reach out**: maili.truong@edu.devinci.fr !
 
 ## Six featured projects
 ---
@@ -67,7 +66,7 @@ _A C# console application for managing your society._
 ---
 - Email: maili.truong@edu.devinci.fr
 - [GitHub](https://github.com/mailittlepony)
-- [LinkedIn](www.linkedin.com/in/maïli-truong-6a9ab02b5)
+- [LinkedIn](https://www.linkedin.com/in/maïli-truong-6a9ab02b5)
 
 ## Fun facts
 ---
@@ -77,6 +76,6 @@ _A C# console application for managing your society._
 - My favorite anime is 'Code Geass'.
 - I studied Japanese on my own and now I know the basics of the language.
 - I learned how to crochet, sew and wooven on my own so I can basically do any cloth I want.
-- You can view my CV <a href="/portfolio/cv.pdf" target="_blank" rel="noopener">here</a> !
+- You can view my CV [here](/portfolio/cv.pdf) !
 
 
