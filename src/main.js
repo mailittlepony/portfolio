@@ -17,7 +17,4 @@ document.addEventListener('DOMContentLoaded', () => {
     handleNavigation();
 });
 
-window.addEventListener("hashchange", () => {
-    scrollToHash();
-});
 
