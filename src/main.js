@@ -16,3 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initRouter();
     handleNavigation();
 });
+
+window.addEventListener("hashchange", () => {
+    scrollToHash();
+});
+

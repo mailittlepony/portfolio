@@ -28,6 +28,25 @@ function scrollToTop() {
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
 }
 
+function scrollToHash() {
+    const hash = window.location.hash;
+    if (!hash) return;
+
+    const id = hash.slice(1);
+    const target = document.getElementById(id);
+    if (!target) return;
+
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function scrollAfterLoad() {
+    if (window.location.hash) {
+        scrollToHash();
+    } else {
+        scrollToTop();
+    }
+}
+
 export async function handleNavigation() {
     const params = new URLSearchParams(window.location.search);
     const projectName = params.get("name");
@@ -36,14 +55,14 @@ export async function handleNavigation() {
     if (projectName) {
         setActiveHeader("", true);
         await loadProjectPage();
-        scrollToTop();
+        scrollAfterLoad();
         return;
     }
 
     if (view && BUILTIN_MD_VIEWS.has(view)) {
         setActiveHeader(view, false);
         await loadMarkdown(`markdown/${view}.md`);
-        scrollToTop();
+        scrollAfterLoad();
         return;
     }
 
@@ -51,7 +70,7 @@ export async function handleNavigation() {
         try {
             setActiveHeader(view, false);
             await loadMarkdown(`markdown/${view}.md`);
-            scrollToTop();
+            scrollAfterLoad();
             return;
         } catch (e) {
             console.warn(`[router] markdown/${view}.md not found → home`, e);
@@ -60,7 +79,7 @@ export async function handleNavigation() {
 
     setActiveHeader("home", false);
     await loadHomePage();
-    scrollToTop();
+    scrollAfterLoad();
 }
 
 export function initRouter() {
@@ -89,4 +108,5 @@ export function initRouter() {
 
     window.addEventListener("popstate", handleNavigation);
 }
+
 

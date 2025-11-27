@@ -9,15 +9,16 @@ import MarkdownIt from "markdown-it";
 import DOMPurify from "dompurify";
 import markdownItHighlight from "markdown-it-highlightjs";
 import markdownItMedia from "@gotfeedback/markdown-it-media";
+import markdownItAnchor from "markdown-it-anchor";
 
 const md = new MarkdownIt({
-    html: true,          
+    html: true,
     linkify: true,
     breaks: true,
 })
 .use(markdownItHighlight, { inline: true })
 .use(markdownItMedia, {
-    controls: true,    
+    controls: true,
     attrs: {
         image: {},
         audio: { controls: "", preload: "metadata" },
@@ -26,18 +27,36 @@ const md = new MarkdownIt({
             preload: "metadata", style: "max-width:100%;height:auto;",
         },
     },
+})
+.use(markdownItAnchor, {
+    slugify: s =>
+        s
+        .trim()
+        .toLowerCase()
+        .replace(/[^\w\s-]/g, "") 
+        .replace(/\s+/g, "-"),   
 });
+
 
 const defaultLinkOpen =
     md.renderer.rules.link_open ??
         ((tokens, idx, options, env, self) => self.renderToken(tokens, idx, options));
+
 md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
+    const href = tokens[idx].attrGet("href");
+
+    if (href && href.startsWith("#")) {
+        return defaultLinkOpen(tokens, idx, options, env, self);
+    }
+
     const t = tokens[idx].attrIndex("target");
     if (t < 0) tokens[idx].attrPush(["target", "_blank"]);
         else tokens[idx].attrs[t][1] = "_blank";
+
     const r = tokens[idx].attrIndex("rel");
     if (r < 0) tokens[idx].attrPush(["rel", "noopener noreferrer"]);
         else tokens[idx].attrs[r][1] = "noopener noreferrer";
+
     return defaultLinkOpen(tokens, idx, options, env, self);
 };
 
