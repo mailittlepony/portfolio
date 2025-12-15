@@ -14,9 +14,9 @@ If you are interested in my work, you can [View My CV](/portfolio/cv.pdf) or **r
 ![mirrormorphose](./images/mirrormorphose/mirror.png)
 ![flowergame](./images/SmallGameboy/FlowerGame.png)
 ![ShadowBallet](./images/ShadowBallet/shadow.jpeg)
+![rayedit](./images/rayedit/rayedit.png)
 ![gaze_tracker](./images/gaze_tracker/gaze.png)
 ![mathexploration](./images/MathExploration/MathExploration.png)
-![raymarching](./images/Droppy/droppy2.png)
 
 If you want to see more projects continue reading !
 
@@ -44,6 +44,14 @@ _MNIST handwritten digit classification using Tinygrad._
 - **License**: Apache License 2.0  
 - **Last Updated**: last week  
 - **Image**: ./images/mnist/mnist.png
+
+---
+**[raymarching](https://github.com/mailittlepony)**
+_Interactive weather visualization using ray marching._
+- **Technologies**: glsl, raymarching  
+- **License**: Apache License 2.0  
+- **Last Updated**: last week  
+- **Image**: ./images/Droppy/droppy2.png
 
 ---
 **[stackrush](https://github.com/mailittlepony)**  

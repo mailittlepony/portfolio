@@ -22,9 +22,14 @@ video {
     width: auto;
     height: auto;
     display: block;
-    margin: 0.5rem auto;
     border-radius: 5px;
     object-fit: cover;
+}
+
+p:has(img, video) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 img:hover:not(#modal img) {

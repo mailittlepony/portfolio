@@ -1,4 +1,5 @@
-# MirrorMorphose
+# MirrorMorphose 
+## *Accepted to TEI 2026 - Art & Performance Track*
 ---
 ![img](./images/mirrormorphose/collage.png)
 
@@ -26,7 +27,7 @@ The software architecture is organized into **three** clear modules:
 driving video.
 The pipeline begins with **two inputs**: a **target image** (past self, family member, friend, or stranger) and a **captured image** of the user. They are both sent to our server and **reenacted** to prerecorded facial motion video to generate a listening animation of both the images. The prerecorded video is **split** into frames, and each frame is **reenacted** to **interpolated images between the user’s face and the target image** via FILM. This approach achieves a **gradual morph** while maintaining the animated, **"listening" reflection**. Finally, a gaze detection library triggers the morph and plays the generated video of the user target on loop when eye contact is detected. It also tracks the user’s face to work only with him, enhancing the intimacy of the experience.
 
-### This method has now been replaced to fix the jitters seen here and "big eyes" on some frames (You can find it at the bottom of this page) !
+### This method has now been replaced to fix the jitters and "big eyes" on some frames (You can find it at the bottom of this page) !
 
 ## Process
 ---
