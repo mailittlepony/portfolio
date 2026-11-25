@@ -1,5 +1,5 @@
 # MirrorMorphose 
-## *Accepted to TEI 2026 - Art & Performance Track*
+## *Accepted to TEI 2027 Paper Track and presented at TEI 2026 Art & Performance Track*
 ---
 ![img](./images/mirrormorphose/collage.png)
 
