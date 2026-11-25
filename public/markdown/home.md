@@ -12,7 +12,7 @@ If you are interested in my work, you can [View My CV](/portfolio/cv.pdf) or **r
 ## Six featured projects 
 ---
 ![mirrormorphose](./images/mirrormorphose/mirror.png)
-![flowergame](./images/SmallGameboy/FlowerGame.png)
+![pipette](./images/pipette/figures/teaser_crop.png)
 ![ShadowBallet](./images/ShadowBallet/shadow.jpeg)
 ![rayedit](./images/rayedit/rayedit.png)
 ![gaze_tracker](./images/gaze_tracker/gaze.png)
@@ -28,6 +28,14 @@ _Really fun antenna made during bootcamp to retreive data from a dead satellite.
 - **License**: IFT License 2.0  
 - **Last Updated**: last week  
 - **Image**: ./images/SatelliteAntenna/SatelliteAntenna.jpeg
+
+---
+**[flowergame](https://github.com/mailittlepony)**  
+_multiplayer game for ESP using TCP protocol_  
+- **Technologies**: C, C++, tcp-client-server  
+- **License**: IFT License 2.0  
+- **Last Updated**: last week  
+- **Image**: ./images/SmallGameboy/FlowerGame.png
 
 ---
 **[simpleECS](https://github.com/mailittlepony)**  
